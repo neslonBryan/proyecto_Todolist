@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['usuario']){
+if(isset($_SESSION['usuario'])){
     header('Location:principal.php');
 }
 include 'baseDatos/db.php';
@@ -18,11 +18,11 @@ include 'controlador.php';
             <form action="" method="POST">
 
                 <div class="form-group">
-                    <label for="username">Email:</label>
+                    <label for="email">Email:</label>
                     <input class="form-control"name="email"type="text" placeholder="Ingresa tu email">
                 </div>
                 <div class="form-group">
-                    <label for="password">Contraseña:</label>
+                    <label for="contraseña">Contraseña:</label>
                     <input class="form-control"name="contraseña"type="password" placeholder="Ingresa tu contraseña">
                 </div>
 
