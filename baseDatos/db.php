@@ -6,7 +6,7 @@
         private $contraseña;
         private $dbNombre;
 
-        public function __constructor(){
+        public function __construct(){
             $this -> server ='localhost';
             $this -> usuario ='root';
             $this -> contraseña ='12345';
@@ -14,8 +14,7 @@
         }
 
         public function conectar (){
-            $conn = new mysqli($this -> server ,$this -> usuario,
-            $this -> contraseña, $this -> dbNombre);
+            $conn = new mysqli($this -> server ,$this -> usuario,$this -> contraseña,$this -> dbNombre);
             return $conn;
         }
     }
