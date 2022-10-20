@@ -34,13 +34,4 @@ include 'controlador.php';
 </div>
 
 
-
-
-
-
-
-
-
-
-
 <?php Include 'complementos/footer.php'?>

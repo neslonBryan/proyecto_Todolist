@@ -8,12 +8,11 @@
             echo '<div class="alert alert-danger">email o contraseña Vacios</div>';
         }
         else{
-
             $user = new User;
 
             if($user ->getUser($email,$contraseña)){
                 session_start();
-                $_SESSION['usuario']=$email;
+                $_SESSION['usuario'] = $email;
                 header('Location:principal.php');
             }
             else{
@@ -23,3 +22,5 @@
 
         }
     }
+
+    

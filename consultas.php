@@ -1,8 +1,9 @@
 <?php
-
-    class User extends baseDatos{
-
+    
+    class User extends conexion{
+        
         public function getUser($email , $contraseña){
+            
             $sql = "SELECT * FROM tusuario WHERE email ='$email' AND contraseña = '$contraseña'";
             
             $resultado = $this->conectar()->query($sql);
@@ -14,6 +15,15 @@
             }
             return false;
         }
-
-
     }
+
+    
+   /* class tareas extends conexion{
+        public function añadir($email){
+            $sql= "INSERT INTO ttarea ()";
+            $resultado = $this->conectar()->query($sql);
+            $cantFilas = $resultado ->num_rows;
+
+            return true;
+        }
+    }*/

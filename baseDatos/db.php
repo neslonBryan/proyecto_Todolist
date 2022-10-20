@@ -1,6 +1,6 @@
 <?php
 
-    class baseDatos{
+    class conexion{
         private $server;
         private $usuario;
         private $contraseña;
