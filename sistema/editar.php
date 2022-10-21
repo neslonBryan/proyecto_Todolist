@@ -1,7 +1,7 @@
 <?php 
 
-    include 'complementos/header.php';
-    require_once 'baseDatos/db.php';
+    include '../complementos/header.php';
+    require_once '../baseDatos/db.php';
 
     $obj = new conexion();
     $conexion = $obj ->conectar();
@@ -17,13 +17,12 @@
                 <p></p>
                 <div class="form-group">
                     <input type="text" name="titulotarea" value="<?php echo $ver[0]?>" class="form-control" maxlength="50"
-                    minlength="1" placeholder="" autofocus>
+                    minlength="5" placeholder="ingresa una tarea" required autofocus>
                 </div>
-               
         <br>
         <center><input type="submit" class="btn btn-success btn-block boton"
         name="guardar" value="Guardar"  ></center>
 </form>
 
 
-<?php include 'complementos/footer.php'; ?>
+<?php include '../complementos/footer.php'; ?>

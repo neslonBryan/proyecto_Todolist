@@ -2,13 +2,13 @@
     session_start();
     if(isset($_POST['cerrarSession'])){
         unset($_SESSION['usuario']);
-        header('Location:index.php');
+        header('Location:../index.php');
     }
 ?>
 <?php if(isset($_SESSION['usuario'])){?>
 <?php require_once 'acciones.php';?>
-<?php include 'baseDatos/db.php';?>
-<?php include 'complementos/header.php';?>
+<?php include '../baseDatos/db.php';?>
+<?php include '../complementos/header.php';?>
 
 
 <div class="container">
@@ -22,7 +22,7 @@
                 <p></p>
                 <div class="form-group">
                     <input type="text" name="titulotarea" class="form-control" maxlength="50"
-                    minlength="1" placeholder="Nueva Tarea ...." autofocus>
+                    minlength="5" placeholder="Nueva Tarea ...." autofocus required>
                 </div>
                 <input type="hidden" name="email" value="<?php echo $iniciouser ?>" readonly>
                 <br>
@@ -81,8 +81,8 @@
 
 
 
-<?php include 'complementos/footer.php'; ?>
+<?php include '../complementos/footer.php'; ?>
 <?php }
 else{
-    header('Location:index.php');
+    header('Location:../index.php');
 } ?>

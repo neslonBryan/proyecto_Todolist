@@ -13,7 +13,7 @@
             if($user ->getUser($email,$contraseña)){
                 session_start();
                 $_SESSION['usuario'] = $email;
-                header('Location:principal.php');
+                header('Location:sistema/principal.php');
             }
             else{
                 echo '<div class="alert alert-danger">El usuario no existe</div>';
@@ -21,6 +21,9 @@
             
 
         }
+    }
+    else if(isset($_POST['registrarse'])){
+        header('Location:registrar/registrarse.php');
     }
 
     

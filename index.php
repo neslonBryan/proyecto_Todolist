@@ -1,8 +1,9 @@
 <?php
 session_start();
 if(isset($_SESSION['usuario'])){
-    header('Location:principal.php');
+    header('Location:sistema/principal.php');
 }
+
 include 'baseDatos/db.php';
 include 'consultas.php';
 include 'controlador.php';
@@ -19,14 +20,16 @@ include 'controlador.php';
 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input class="form-control"name="email"type="text" placeholder="Ingresa tu email">
+                    <input class="form-control" name="email" type="email" placeholder="Ingresa tu email">
                 </div>
                 <div class="form-group">
                     <label for="contraseña">Contraseña:</label>
-                    <input class="form-control"name="contraseña"type="password" placeholder="Ingresa tu contraseña">
+                    <input class="form-control" name="contraseña" type="password" placeholder="Ingresa tu contraseña">
                 </div>
-
+                <br>
                 <button type="submit" name ="submit" class="btn btn-sm btn-block btn-primary">Iniciar Sesion</button>
+
+                <button type="submit" name="registrarse" class="btn btn-sm btn-block btn-primary" >Registrate !!</button>
             </form>
 
         </div>
