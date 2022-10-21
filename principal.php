@@ -24,24 +24,20 @@
                     <input type="text" name="titulotarea" class="form-control" maxlength="50"
                     minlength="1" placeholder="Nueva Tarea ...." autofocus>
                 </div>
-                <input type="text" name="email" value="<?php echo $iniciouser ?>" readonly>
+                <input type="hidden" name="email" value="<?php echo $iniciouser ?>" readonly>
                 <br>
                 <center><input type="submit" class="btn btn-success btn-block boton"
                 name="guardar" value="Guardar"  ></center>
             </form>
     </div>
-    <div class="row mt-3 justify-content-md-center">
-            <form action="" method="POST">
-                <button type="submit" class="btn btn-primary btn-block" 
-                    name="cerrarSession">cerrar session
-                </button>
-            </form>
-    </div>
+    
     <div class="col-md-8">
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>Lista de tareas</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>
                 </tr>
             </thead>
             <tbody>
@@ -53,14 +49,25 @@
                 ?> 
                 <tr>
                     <td><?php echo $key['titulotarea']?></td>
+                    
+                    <td>
+                        <a href="editar.php?id=<?php echo $key['id'] ?>">
+                            Editar 
+                        </a>
+                    </td>
                 </tr>
                 <?php
                 }
                 ?>
             </tbody>
         </table>
-
-
+    </div>
+    <div class="row mt-3 justify-content-md-center">
+            <form action="" method="POST">
+                <button type="submit" class="btn btn-primary btn-block" 
+                    name="cerrarSession">cerrar session
+                </button>
+            </form>
     </div>
 
     

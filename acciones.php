@@ -19,4 +19,12 @@
             
         }
 
+        public function actualizarTarea($datos){
+            $c = new conexion();
+            $conexion = $c -> conectar();
+            $sql = "UPDATE ttarea SET titulotarea='$datos[0]'
+                    WHERE id='$datos[1]'";
+            return $result =mysqli_query($conexion , $sql);
+        }
+
     }

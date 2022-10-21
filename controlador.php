@@ -5,7 +5,7 @@
         $contraseña = $_POST['contraseña'];
 
         if(empty($email)||empty($contraseña)){
-            echo '<div class="alert alert-danger">email o contraseña Vacios</div>';
+            echo '<div class="alert alert-danger">Email y/o contraseña vacio(s)</div>';
         }
         else{
             $user = new User;
@@ -16,7 +16,7 @@
                 header('Location:principal.php');
             }
             else{
-                echo '<div class="alert alert-danger">El usuaio no existe</div>';
+                echo '<div class="alert alert-danger">El usuario no existe</div>';
             }
             
 
