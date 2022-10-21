@@ -27,4 +27,10 @@
             return $result =mysqli_query($conexion , $sql);
         }
 
+        public function eliminarTarea($id){
+            $c = new conexion();
+            $conexion = $c -> conectar();
+            $sql = "DELETE FROM ttarea WHERE id='$id'";
+            return $result =mysqli_query($conexion , $sql);
+        }
     }

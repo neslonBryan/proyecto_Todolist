@@ -55,6 +55,11 @@
                             Editar 
                         </a>
                     </td>
+                    <td>
+                        <a href="procesos/eliminar.php?id=<?php echo $key['id'] ?>">
+                            Eliminar 
+                        </a>
+                    </td>
                 </tr>
                 <?php
                 }
