@@ -17,12 +17,14 @@
     </div>
 
     <div class="card card-body ester">
-            <form action="" method="POST">
-                <h2>Ingresar nueva Tarea</h2>
+            <form action="procesos/insertar.php" method="post">
+                <label>Ingresar nueva Tarea</label>
+                <p></p>
                 <div class="form-group">
-                    <input type="text" name="tarea" class="form-control" maxlength="50"
+                    <input type="text" name="titulotarea" class="form-control" maxlength="50"
                     minlength="1" placeholder="Nueva Tarea ...." autofocus>
                 </div>
+                <input type="text" name="email" value="<?php echo $iniciouser ?>" readonly>
                 <br>
                 <center><input type="submit" class="btn btn-success btn-block boton"
                 name="guardar" value="Guardar"  ></center>
