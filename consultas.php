@@ -1,5 +1,4 @@
 <?php
-    
     class User extends conexion{
         
         public function getUser($email , $contraseña){
@@ -16,14 +15,3 @@
             return false;
         }
     }
-
-    
-   /* class tareas extends conexion{
-        public function añadir($email){
-            $sql= "INSERT INTO ttarea ()";
-            $resultado = $this->conectar()->query($sql);
-            $cantFilas = $resultado ->num_rows;
-
-            return true;
-        }
-    }*/

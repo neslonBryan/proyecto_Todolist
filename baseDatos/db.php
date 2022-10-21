@@ -13,7 +13,7 @@
             $this -> dbNombre ='db_todolist';
         }
 
-        public function conectar (){
+        public function conectar(){
             $conn = new mysqli($this -> server ,$this -> usuario,$this -> contraseña,$this -> dbNombre);
             return $conn;
         }

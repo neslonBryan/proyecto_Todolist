@@ -6,11 +6,14 @@
     }
 ?>
 <?php if(isset($_SESSION['usuario'])){?>
+<?php require_once 'acciones.php';?>
+<?php include 'baseDatos/db.php';?>
 <?php include 'complementos/header.php';?>
+
 
 <div class="container">
     <div class="row mt-3 justify-content-md-center">
-        <h1>Hola, Bienvenido <?php echo ' <strong>'.$_SESSION['usuario'].'<strong>'?></h1>
+        <h1>Hola, Bienvenido <?php $iniciouser = $_SESSION['usuario'] ;echo ' <strong>'.$iniciouser.'<strong>'?></h1>
     </div>
 
     <div class="card card-body ester">
@@ -40,7 +43,18 @@
                 </tr>
             </thead>
             <tbody>
-                
+                <?php
+                $obj = new metodos();
+                $sql = "SELECT * FROM ttarea where email='$iniciouser' ";
+                $datos = $obj -> mostrarDatos($sql);
+                foreach($datos as $key){
+                ?> 
+                <tr>
+                    <td><?php echo $key['titulotarea']?></td>
+                </tr>
+                <?php
+                }
+                ?>
             </tbody>
         </table>
 
