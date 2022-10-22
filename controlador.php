@@ -9,7 +9,6 @@
         }
         else{
             $user = new User;
-
             if($user ->getUser($email,$contraseña)){
                 session_start();
                 $_SESSION['usuario'] = $email;
@@ -22,8 +21,3 @@
 
         }
     }
-    else if(isset($_POST['registrarse'])){
-        header('Location:registrar/registrarse.php');
-    }
-
-    

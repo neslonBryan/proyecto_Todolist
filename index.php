@@ -20,16 +20,18 @@ include 'controlador.php';
 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input class="form-control" name="email" type="email" placeholder="Ingresa tu email">
+                    <input class="form-control" name="email" type="email" placeholder="Ingresa tu email" required autofocus 
+                    reset autocomplete = "off">
                 </div>
                 <div class="form-group">
                     <label for="contraseña">Contraseña:</label>
-                    <input class="form-control" name="contraseña" type="password" placeholder="Ingresa tu contraseña">
+                    <input class="form-control" name="contraseña" type="password" placeholder="Ingresa tu contraseña" required
+                    reset autocomplete = "off">
                 </div>
                 <br>
                 <button type="submit" name ="submit" class="btn btn-sm btn-block btn-primary">Iniciar Sesion</button>
 
-                <button type="submit" name="registrarse" class="btn btn-sm btn-block btn-primary" >Registrate !!</button>
+                <button ><a href="registrar/registrarse.php"> Registrate !!</a></button>
             </form>
 
         </div>

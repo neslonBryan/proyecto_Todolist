@@ -1,12 +1,28 @@
 <?php
+    require_once '../baseDatos/db.php';
 
-class metodo{
-    public function insertarUsuario($datos){
+class comprobar extends conexion {
+    
+    public function insertarUsuario($email,$contraseña){
         $c = new conexion();
         $conexion = $c -> conectar();
         $sql = "INSERT INTO tusuario (email,contraseña) 
-                VALUES ('$datos[0]','$datos[1]')";
+                VALUES ('$email','$contraseña')";
         return $result = mysqli_query($conexion,$sql);
+    }
+
+    public function verificarUsuario($email,$contraseña){
+        $c = new conexion();
+        $conexion = $c -> conectar();
+        $sql = "SELECT * FROM tusuario WHERE email ='$email'and contraseña='$contraseña' ";
+        $result= mysqli_query($conexion , $sql);
+        
+        if(mysqli_num_rows($result)>0){
+            return 1;
+        }
+        else{
+            return 0;
+        }
     }
 }
 
