@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://www.todofondos.net/wp-content/uploads/Fondo-de-Pantalla-3840x2160-ESPACIO-PROFUNDO-OSCURO-4K.-Fondo-de-Pantalla-4k-Gratis-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color:blue;
+    margin-bottom: 30px;
+}
+
+label{
+    color:aqua;
+}
+input.form-control{
+    border:1px solid grey;
+    background-color: grey;
+}
+input.form-control::placeholder{
+    color:black;
+    text-align: center;
+}
+.tarea{
+    width: 30%;
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+input.btn.btn-success.btn-block.boton{
+    border: 1px solid #000;
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-color: blue;
+    color: #fff;
+    box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+input.btn.btn-success.btn-block.boton:hover {
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px #3498db;
+ }
+
+table.table-bordered{
+    color:white;
+    text-align: center;
+    border:1px solid blue;
+    
+}
+a{
+    text-decoration: none;
+    color:blue;
+}
+#editar{
+    color: yellow;
+}
+#eliminar{
+    color:red;
+}
+.editar{
+    margin-top:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+#textoactualizar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+button.btn.btn-primary.btn-block{
+    border: 1px solid #000;
+    background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-color: blue;
+    color: #fff;
+    box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+button.btn.btn-primary.btn-block:hover {
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+ }

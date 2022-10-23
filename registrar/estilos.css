@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-image: url("https://www.xtrafondos.com/wallpapers/resized/estrellas-en-el-espacio-3907.jpg?s=large");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    margin:0 auto;
+    text-align: center;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 30%;
+    margin-top: 20px;
+    padding: auto;
+    border:1px solid;
+    border-radius: 5px;
+}
+img{
+    height: 150px;
+    display: block;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 32px;
+    box-shadow: 3px 3px 3px 3px rgb(87, 113, 197);
+}
+label{
+    font-size: 25px;
+    color:rgb(0, 238, 255);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input.form-control{
+    margin:0 auto;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    height: 50px;
+    padding: 5px;
+    background-color: grey;
+}
+input::placeholder{
+    font-size: 1.2em;
+    font-style: italic;
+    color:black
+}
+.form-control::placeholder{
+    color: black;
+    font-weight: bold;
+}
+form{
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgb(5, 83, 252);
+    padding: 10px;
+    border-radius: 40px;
+}
+button{
+    height: 40px;
+    color:black;
+    background-color: grey;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 19px;
+    padding: 10px;
+    padding-top: 3px;
+}
+button.btn.btn-sm.btn-block.btn-primary{
+    height: 40px;
+    background-color:blue;
+    border:1px solid grey;
+    color:black;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 6px;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#v{
+    text-align:center;
+
+}
+h6{
+    color: aquamarine;
+    font-weight: bold;
+}

@@ -11,13 +11,13 @@ class comprobar extends conexion {
         return $result = mysqli_query($conexion,$sql);
     }
 
-    public function verificarUsuario($email,$contraseña){
+    public function verificarUsuario($email){
         $c = new conexion();
         $conexion = $c -> conectar();
-        $sql = "SELECT * FROM tusuario WHERE email ='$email'and contraseña='$contraseña' ";
+        $sql = "SELECT * FROM tusuario WHERE email ='$email'";
         $result= mysqli_query($conexion , $sql);
-        
         if(mysqli_num_rows($result)>0){
+            
             return 1;
         }
         else{
