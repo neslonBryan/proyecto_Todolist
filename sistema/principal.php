@@ -29,7 +29,7 @@
 
     <div class="tarea">
             <form action="procesos/insertar.php" method="post">
-                <label>Quieres ingresar nueva Tarea?</label>
+                <label id="quieres">Quieres ingresar nueva Tarea?</label>
                 <p></p>
                 <div class="form-group">
                     <input type="text" name="titulotarea" class="form-control" maxlength="50"
@@ -89,6 +89,8 @@
     
 
 </div>
+
+
 
 
 <!-- JavaScript Bundle with Popper -->

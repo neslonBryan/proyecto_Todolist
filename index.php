@@ -44,7 +44,7 @@ include 'controlador.php';
                 <br>
                 <div id="botones">
                     <button type="submit" name ="submit" class="btn btn-sm btn-block btn-primary">Iniciar Sesion</button>
-                    <br>
+
                     <button ><a href="registrar/registrarse.php"> Registrate !!</a></button>
                 </div>
             </form>
